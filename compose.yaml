@@ -1,0 +1,8 @@
+---
+name: humble
+services:
+    cpu-load:
+        build: ./cpu_load/
+        image: load-logger:latest
+        volumes:
+            - /proc/stat:/host_proc/stat:ro
